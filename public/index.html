@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>National Institute of Learning - A Trusted Learning Partner</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="National Institute of Learning is a professional training institute offering job-oriented courses in Python, Data Analytics, Full Stack Development, Digital Marketing, AI, German Language, and Spoken English.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Manrope:400,500,600,700,800|Poppins:400,500,600,700,800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-left">
+        <span><i class="fa-solid fa-envelope"></i> info@nationalinstituteoflearning.com</span>
+        <span><i class="fa-solid fa-phone"></i> +91 81002 92001</span>
+      </div>
+      <div class="topbar-right">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="/" class="logo">
+        <img src="logo.png" alt="National Institute of Learning Logo">
+      </a>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#features">Why Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="/admin.html" class="admin-btn"><i class="fa-solid fa-lock"></i> Admin Portal</a>
+    </div>
+  </header>
+
+  <!-- Full Width Hero Section -->
+  <section class="hero-banner">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-subtitle">A Trusted Learning Partner</span>
+      <h1 class="hero-title">Empower Your Career With<br><span>Industry-Ready</span> Skills</h1>
+      <p class="hero-desc">Join our professional training institute offering specialized, job-oriented courses in IT, Digital Marketing, Languages, and Soft Skills.</p>
+      <div class="hero-actions">
+        <a href="#enroll-form" class="btn btn-primary">Apply Now</a>
+        <a href="#courses" class="btn btn-secondary">Explore Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Section (Overlapping Hero) -->
+  <section class="enroll-section" id="enroll-form">
+    <div class="container">
+      <div class="form-container">
+        <!-- Title Card -->
+        <div class="form-card title-card">
+          <div class="card-decor-line"></div>
+          <h2 id="form-main-title">Start Your Journey</h2>
+          <p class="form-description">Fill out the application below and our counselors will get in touch with you.</p>
+          <div class="required-indicator">* Indicates required question</div>
+        </div>
+
+        <!-- Main Registration Form -->
+        <form id="google-style-form" novalidate>
+          
+          <div class="form-grid">
+            <!-- Left Column -->
+            <div class="form-col">
+              <!-- Name -->
+              <div class="form-card question-card" id="q-card-name">
+                <label for="full-name" class="question-title">Full Name <span class="required-star">*</span></label>
+                <div class="input-container">
+                  <input type="text" id="full-name" class="underline-input" placeholder="Enter your full name" required>
+                </div>
+                <span class="error-msg" id="name-error"><i class="fa-solid fa-circle-exclamation"></i> Required</span>
+              </div>
+
+              <!-- Email -->
+              <div class="form-card question-card" id="q-card-email">
+                <label for="email" class="question-title">Email Address <span class="required-star">*</span></label>
+                <div class="input-container">
+                  <input type="email" id="email" class="underline-input" placeholder="yourname@example.com" required>
+                </div>
+                <span class="error-msg" id="email-error"><i class="fa-solid fa-circle-exclamation"></i> Invalid email</span>
+              </div>
+
+              <!-- Phone -->
+              <div class="form-card question-card" id="q-card-phone">
+                <label for="phone" class="question-title">Phone Number <span class="required-star">*</span></label>
+                <div class="input-container">
+                  <input type="tel" id="phone" class="underline-input" placeholder="10-digit number" required>
+                </div>
+                <span class="error-msg" id="phone-error"><i class="fa-solid fa-circle-exclamation"></i> Invalid phone</span>
+              </div>
+
+              <!-- WhatsApp -->
+              <div class="form-card question-card" id="q-card-whatsapp">
+                <label for="whatsapp" class="question-title">WhatsApp <span class="required-star">*</span></label>
+                <div class="whatsapp-helper-row">
+                  <input type="checkbox" id="same-as-phone" checked>
+                  <label for="same-as-phone">Same as Phone</label>
+                </div>
+                <div class="input-container">
+                  <input type="tel" id="whatsapp" class="underline-input" placeholder="10-digit number" required>
+                </div>
+                <span class="error-msg" id="whatsapp-error"><i class="fa-solid fa-circle-exclamation"></i> Invalid number</span>
+              </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="form-col">
+              <!-- Qualification -->
+              <div class="form-card question-card" id="q-card-summary">
+                <label for="summary" class="question-title">Current Qualification <span class="required-star">*</span></label>
+                <div class="input-container">
+                  <input type="text" id="summary" class="underline-input" placeholder="e.g. B.Tech, Graduate" required>
+                </div>
+                <span class="error-msg" id="summary-error"><i class="fa-solid fa-circle-exclamation"></i> Required</span>
+              </div>
+
+              <!-- Location -->
+              <div class="form-card question-card" id="q-card-location">
+                <label for="location" class="question-title">Location <span class="required-star">*</span></label>
+                <div class="input-container">
+                  <input type="text" id="location" class="underline-input" placeholder="City / Area" required>
+                </div>
+                <span class="error-msg" id="location-error"><i class="fa-solid fa-circle-exclamation"></i> Required</span>
+              </div>
+
+              <!-- Upload CV Card -->
+              <div class="form-card question-card" id="q-card-cv">
+                <label for="cv-file" class="question-title">Upload CV / Resume <span class="required-star">*</span></label>
+                <p class="question-subtitle">(PDF or JPG, Max: 2MB)</p>
+                <div class="input-container file-input-container">
+                  <input type="file" id="cv-file" accept=".pdf, .jpg, .jpeg" style="display:none;" required>
+                  <button type="button" class="upload-btn" id="btn-file-trigger"><i class="fa-solid fa-upload"></i> Browse File</button>
+                  <span class="file-name-label" id="file-name-label">No file selected</span>
+                </div>
+                <span class="error-msg" id="cv-error"><i class="fa-solid fa-circle-exclamation"></i> Please upload valid CV</span>
+              </div>
+            </div>
+          </div> <!-- End Form Grid -->
+
+          <!-- Full Width: Course Selection -->
+          <div class="form-card question-card" id="q-card-course">
+            <label class="question-title">Select Your Course <span class="required-star">*</span></label>
+            <div class="course-search-wrapper">
+              <i class="fa-solid fa-search search-icon"></i>
+              <input type="text" id="course-filter-input" placeholder="Search for courses (e.g. Python, Digital Marketing)...">
+            </div>
+            <div class="radio-group-container" id="courses-radio-list">
+              <!-- Populated by JS -->
+            </div>
+            <span class="error-msg" id="course-error"><i class="fa-solid fa-circle-exclamation"></i> Please select a course</span>
+          </div>
+
+          <!-- Full Width: Details -->
+          <div class="form-card question-card" id="q-card-details">
+            <label for="details" class="question-title">Additional Queries</label>
+            <div class="input-container">
+              <textarea id="details" class="underline-input textarea-input" placeholder="Any specific requirements or questions?" rows="3"></textarea>
+            </div>
+          </div>
+
+          <!-- Submit Section -->
+          <div class="submit-row">
+            <button type="submit" class="submit-btn" id="submit-btn">Submit Application <i class="fa-solid fa-arrow-right"></i></button>
+            <button type="button" class="clear-btn" id="clear-form-btn">Clear</button>
+          </div>
+        </form>
+
+        <!-- Success Screen -->
+        <div class="form-card success-card" id="success-screen" style="display:none;">
+          <div class="card-decor-line"></div>
+          <i class="fa-solid fa-circle-check success-icon"></i>
+          <h2 class="success-title">Application Received!</h2>
+          <p class="success-message">Thank you for choosing National Institute of Learning. Our team will review your application and contact you shortly.</p>
+          
+          <!-- Kept for app.js compatibility, hidden visually -->
+          <div class="success-details-box" style="display:none;">
+            <span id="success-name"></span>
+            <span id="success-phone"></span>
+            <span id="success-whatsapp"></span>
+            <span id="success-course"></span>
+            <span id="success-cv"></span>
+          </div>
+
+          <div class="success-actions">
+            <a href="#" id="submit-another-link" class="success-link">Submit another response</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Courses Section -->
+  <section class="courses-section" id="courses">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Explore Programs</span>
+        <h2>Popular Job-Oriented Courses</h2>
+        <div class="heading-line"></div>
+      </div>
+      
+      <div class="course-grid">
+        <div class="course-card">
+          <div class="course-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Full Stack Development</h3>
+          <p>Master frontend and backend technologies to build complete web applications from scratch.</p>
+        </div>
+        <div class="course-card">
+          <div class="course-icon"><i class="fa-solid fa-bullhorn"></i></div>
+          <h3>Digital Marketing</h3>
+          <p>Learn SEO, SMM, and Google Ads to become a certified digital marketing expert.</p>
+        </div>
+        <div class="course-card">
+          <div class="course-icon"><i class="fa-brands fa-python"></i></div>
+          <h3>Python & Data Analytics</h3>
+          <p>Dive into data science with Python, Pandas, and machine learning fundamentals.</p>
+        </div>
+        <div class="course-card">
+          <div class="course-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>Generative AI</h3>
+          <p>Stay ahead of the curve by learning prompt engineering and AI tool integrations.</p>
+        </div>
+        <div class="course-card">
+          <div class="course-icon"><i class="fa-solid fa-language"></i></div>
+          <h3>Foreign Languages</h3>
+          <p>Fluent Spoken English, French, and German language courses for global opportunities.</p>
+        </div>
+        <div class="course-card">
+          <div class="course-icon"><i class="fa-solid fa-calculator"></i></div>
+          <h3>Tally & Adv. Excel</h3>
+          <p>Professional accounting courses designed for finance and commerce students.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Why NIOL?</span>
+        <h2>Why Choose National Institute of Learning</h2>
+        <div class="heading-line"></div>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-certificate"></i></div>
+          <h4>ISO 9001:2015 Certified</h4>
+          <p>We adhere to strict international quality standards for all our training programs.</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+          <h4>Expert Faculty</h4>
+          <p>Learn from industry veterans with years of hands-on corporate experience.</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <h4>100% Placement Assistance</h4>
+          <p>Dedicated placement cell to help you land your dream job upon course completion.</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h4>Practical Training</h4>
+          <p>Focus on real-world projects, case studies, and hands-on lab sessions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-content text-center">
+        <h2>About National Institute of Learning</h2>
+        <p>National Institute of Learning is a premier professional training institute. Our goal is to bridge the gap between traditional education and modern industry requirements. Whether you are looking to upgrade your IT skills, master a foreign language, or develop your personality, NIOL provides the perfect ecosystem for your growth.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-col">
+        <img src="logo.png" alt="NIOL Logo" class="footer-logo">
+        <p>A Trusted Learning Partner empowering careers with industry-ready skills and certifications.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#features">Why Choose Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact Info</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Kolkata, West Bengal, India</p>
+        <p><i class="fa-solid fa-phone"></i> +91 81002 92001</p>
+        <p><i class="fa-solid fa-envelope"></i> info@nationalinstituteoflearning.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 National Institute of Learning. All Rights Reserved. ISO 9001:2015 Certified.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JS -->
+  <script src="app.js"></script>
+</body>
+</html>

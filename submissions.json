@@ -1,0 +1,78 @@
+[
+  {
+    "id": "1784097966498",
+    "name": "Alex Mercer",
+    "email": "alex.mercer@proto.com",
+    "phone": "9876543210",
+    "whatsapp": "9876543210",
+    "summary": "B.Tech in Computer Science",
+    "location": "Kolkata, West Bengal",
+    "course": "Cyber Security",
+    "details": "I want to enroll in the upcoming Cyber Security batch.",
+    "submittedAt": "2026-07-15T06:46:06.498Z"
+  },
+  {
+    "id": "1784098546932",
+    "name": "Alex Mercer",
+    "email": "alex.mercer@proto.com",
+    "phone": "9876543210",
+    "whatsapp": "9876543210",
+    "summary": "B.Tech in Computer Science",
+    "location": "Kolkata, West Bengal",
+    "course": "Cyber Security",
+    "details": "I want to enroll in the upcoming Cyber Security batch.",
+    "submittedAt": "2026-07-15T06:55:46.932Z"
+  },
+  {
+    "id": "1784098846457",
+    "name": "Alex Mercer",
+    "email": "alex.mercer@proto.com",
+    "phone": "9876543210",
+    "whatsapp": "9876543210",
+    "summary": "B.Tech in Computer Science",
+    "location": "Kolkata, West Bengal",
+    "course": "Cyber Security",
+    "details": "I want to enroll in the upcoming Cyber Security batch.",
+    "submittedAt": "2026-07-15T07:00:46.457Z"
+  },
+  {
+    "id": "1784099299195",
+    "name": "Sam Richard",
+    "email": "samrichi666@gmail.com",
+    "phone": "7439834737",
+    "whatsapp": "7439834737",
+    "summary": "i want to do job as soon as possible",
+    "location": "Santragachi",
+    "course": "Graphic Designing",
+    "details": "",
+    "submittedAt": "2026-07-15T07:08:19.195Z"
+  },
+  {
+    "id": "1784099939754",
+    "name": "Jane Doe",
+    "email": "jane.doe@proto.com",
+    "phone": "9876543211",
+    "whatsapp": "9876543211",
+    "summary": "B.Sc in IT",
+    "location": "Mumbai, Maharashtra",
+    "course": "Cyber Security",
+    "details": "Mock CV upload test.",
+    "cvUrl": "/uploads/1784099939751_jane_cv.jpg",
+    "cvName": "jane_cv.jpg",
+    "submittedAt": "2026-07-15T07:18:59.754Z"
+  },
+  {
+    "id": "1784100521574",
+    "name": "sam sam",
+    "email": "samrichi666@gmail.com",
+    "phone": "7439834737",
+    "whatsapp": "7439834737",
+    "summary": "i want to do job as soon as possible",
+    "location": "Santragachi",
+    "course": "Business Communication",
+    "details": "",
+    "cvUrl": "/uploads/1784100521563_riripipi.jpeg",
+    "cvName": "riripipi.jpeg",
+    "submittedAt": "2026-07-15T07:28:41.574Z"
+  }
+]

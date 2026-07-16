@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIOL Admin Portal | Submissions Dashboard</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Manrope:300,400,500,600,700,800|Poppins:300,400,500,600,700,800&display=swap" rel="stylesheet">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <!-- Lock Screen Modal -->
+  <div class="lock-modal active" id="auth-modal">
+    <div class="lock-card">
+      <div class="lock-icon"><i class="fa-solid fa-lock"></i></div>
+      <h2>Administration Login</h2>
+      <p>Enter the security key to view cohort submissions.</p>
+      <form id="auth-form">
+        <div class="form-group">
+          <input type="password" id="auth-key" placeholder="Enter Security Key" required>
+          <span class="auth-error-msg" id="auth-error">Incorrect Key. Please try again.</span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Unlock Dashboard</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Dashboard App -->
+  <div class="app-layout" id="dashboard-app" style="display:none;">
+    
+    <!-- Top Nav -->
+    <header class="admin-header">
+      <div class="admin-header-container">
+        <div class="brand">
+          <img src="logo.png" alt="NIOL Logo" class="admin-logo">
+          <span>Admin Portal</span>
+        </div>
+        <div class="nav-actions">
+          <a href="/" class="btn-home"><i class="fa-solid fa-house"></i> View Site</a>
+          <button id="btn-logout" class="btn-logout"><i class="fa-solid fa-sign-out-alt"></i> Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="dashboard-content">
+      <div class="container-fluid">
+        
+        <!-- Dashboard Stats -->
+        <section class="stats-row">
+          <div class="stat-card">
+            <div class="stat-card-icon bg-green"><i class="fa-solid fa-users"></i></div>
+            <div class="stat-card-data">
+              <span class="stat-val" id="total-registrations">0</span>
+              <span class="stat-desc">Total Applications</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-icon bg-blue"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="stat-card-data">
+              <span class="stat-val" id="cyber-security-count">0</span>
+              <span class="stat-desc">Cyber Security Enrollees</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-icon bg-gold"><i class="fa-solid fa-calendar-day"></i></div>
+            <div class="stat-card-data">
+              <span class="stat-val" id="today-count">0</span>
+              <span class="stat-desc">Submissions Today</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Filters Block -->
+        <section class="filters-card">
+          <div class="filters-row">
+            <div class="filter-col search-col">
+              <i class="fa-solid fa-magnifying-glass filter-icon"></i>
+              <input type="text" id="admin-search" placeholder="Search by name, email, phone or location...">
+            </div>
+            <div class="filter-col dropdown-col">
+              <i class="fa-solid fa-graduation-cap filter-icon"></i>
+              <select id="admin-course-filter">
+                <option value="all">All Courses</option>
+                <!-- populated by js -->
+              </select>
+            </div>
+            <div class="filter-col action-col">
+              <a href="/api/submissions/export" class="btn btn-export" id="btn-export-csv">
+                <i class="fa-solid fa-file-csv"></i> Export CSV
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Data Table Card -->
+        <section class="table-card">
+          <div class="table-header">
+            <h3>Registered Candidates</h3>
+            <button id="btn-refresh" class="btn-refresh"><i class="fa-solid fa-rotate"></i> Refresh</button>
+          </div>
+          
+          <div class="table-responsive">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Submitted At</th>
+                  <th>Candidate Name</th>
+                  <th>Call Number</th>
+                  <th>WhatsApp Number</th>
+                  <th>Course to Learn</th>
+                  <th>CV / Resume</th>
+                  <th>Candidate Details</th>
+                </tr>
+              </thead>
+              <tbody id="table-body">
+                <!-- populated dynamically -->
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table-empty-state" id="table-empty" style="display:none;">
+            <i class="fa-solid fa-folder-open empty-icon"></i>
+            <p>No candidates found matching the filters.</p>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
